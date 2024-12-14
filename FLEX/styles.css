@@ -1,0 +1,95 @@
+/* Estilo general */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column; /* Disposición vertical general */
+  min-height: 100vh; /* Asegura que ocupe toda la pantalla */
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0 0 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Encabezado */
+.header {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+/* Navegación */
+.nav {
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav ul {
+  display: flex; /* Usar Flexbox para alinear elementos del menú */
+  justify-content: center; /* Centra los enlaces horizontalmente */
+  gap: 20px;
+  padding: 10px;
+}
+
+.nav a {
+  color: #333;
+  padding: 5px 10px;
+}
+
+.nav a:hover {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Contenedor principal */
+.main {
+  display: flex; /* Contenedor principal usa Flexbox */
+  flex: 1; /* Ocupa el espacio restante en la pantalla */
+  flex-wrap: wrap; /* Permite que los elementos se adapten si hay poco espacio */
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Sección principal */
+.content {
+  flex: 2; /* La sección principal ocupa el doble de espacio que la barra lateral */
+  min-width: 300px; /* Asegura un tamaño mínimo */
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Barra lateral */
+.sidebar {
+  flex: 1; /* Ocupa menos espacio que la sección principal */
+  min-width: 200px; /* Asegura un tamaño mínimo */
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+/* Pie de página */
+.footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
